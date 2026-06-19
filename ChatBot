@@ -1,0 +1,41 @@
+print("SmartBot: Hello! I'm SmartBot.")
+print("Type 'help' to see what I can do.")
+print("Type 'bye' anytime to exit.\n")
+
+while True:
+    user = input("You: ").strip().lower()
+
+    if user in ["hello", "hi", "hey"]:
+        print("SmartBot: Hi! Nice to meet you.")
+
+    elif user == "how are you":
+        print("SmartBot: I'm doing great! Thanks for asking.")
+
+    elif user == "what is your name":
+        print("SmartBot: My name is SmartBot, your virtual assistant.")
+
+    elif user == "who created you":
+        print("SmartBot: I was created by Ibrahim as part of an internship project!")
+
+    elif user == "help":
+        print("\nSmartBot: Here are the commands I understand:")
+        print("   • hello / hi / hey")
+        print("   • how are you")
+        print("   • what is your name")
+        print("   • who created you")
+        print("   • tell me a joke")
+        print("   • thank you")
+        print("   • bye\n")
+
+    elif user == "tell me a joke":
+        print("SmartBot: Why do programmers prefer dark mode? Because light attracts bugs!")
+
+    elif user in ["thank you", "thanks"]:
+        print("SmartBot: You're welcome! Happy to help.")
+
+    elif user == "bye":
+        print(" SmartBot: Goodbye! Have a wonderful day. 👋")
+        break
+
+    else:
+        print("SmartBot: Sorry, I don't understand that. Type 'help' to see available commands.")
